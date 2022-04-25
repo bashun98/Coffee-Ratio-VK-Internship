@@ -9,52 +9,42 @@
 import SwiftUI
 
 struct ContentView: View {
-
+    
     @State var coffee: String = ""
     @State var waterRatio: String = ""
-
-
+    
     var body: some View {
-        VStack {
-            
-            CoffeeInput(amount: $coffee)
-
+        GeometryReader { geometry in
             VStack {
-                Spacer()
-                    .frame(height: CGFloat(20))
-
+                CoffeeInput(amount: $coffee)
+                    .frame(width: geometry.size.width, height: geometry.size.height / 5)
+                
                 Divider()
-                    .frame(width: CGFloat(267))
-
-                Spacer()
-                    .frame(height: CGFloat(20))
-            }
-
-
-            WaterInput(amount: $waterRatio)
-
-            VStack {
-                Spacer()
-                    .frame(height: CGFloat(20))
-
+                    .frame(width: geometry.size.width / 1.5)
+                
+                WaterInput(amount: $waterRatio)
+                    .frame(width: geometry.size.width, height: geometry.size.height / 5)
+                
                 Divider()
-                    .frame(width: CGFloat(267))
-
-                Spacer()
-                    .frame(height: CGFloat(20))
+                    .frame(width: geometry.size.width / 1.5)
+                
+                WaterDisplay(
+                    waterRatio: $coffee,
+                    coffee: $waterRatio
+                )
+                .frame(width: geometry.size.width, height: geometry.size.height / 5)
+                
+                Divider()
+                    .frame(width: geometry.size.width / 1.5)
+                
+                TimerView()
+                    .frame(width: geometry.size.width, height: geometry.size.height * 0.3)
             }
-
-            WaterDisplay(
-                waterRatio: $coffee,
-                coffee: $waterRatio
-            )
-
-            Spacer()
-                .frame(height: CGFloat(100))
-
-            TimerView()
-
+            .padding()
+            .frame(width: geometry.size.width)
+            .frame(minHeight: geometry.size.height)
         }
+        .edgesIgnoringSafeArea(.all)
     }
 }
 

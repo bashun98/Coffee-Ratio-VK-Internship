@@ -8,9 +8,10 @@
 
 import Foundation
 
-typealias Grams = Double
+typealias Grams = Int
 
 class CalculatorViewModel {
+    
     static func calculateGramsOfWaterTimes(waterRatio: Grams, coffee: Grams) -> Grams {
       return waterRatio * coffee
     }

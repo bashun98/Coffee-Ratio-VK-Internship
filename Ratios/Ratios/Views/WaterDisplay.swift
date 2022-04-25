@@ -9,32 +9,47 @@
 import SwiftUI
 
 struct WaterDisplay: View {
+    
     @Binding var waterRatio: String
     @Binding var coffee: String
-
-
+    
     var body: some View {
-        VStack {
-            Text("You need")
-                .fixedSize()
-                .font(.system(size: 24))
-
-            Text(
-                String(
-                    CalculatorViewModel.calculateGramsOfWaterTimes(
-                        waterRatio: Grams(waterRatio) ?? 0.0,
-                        coffee: Grams(coffee) ?? 0.0
+        GeometryReader { geometry in
+            VStack {
+                Spacer()
+                    .frame(maxHeight: geometry.size.height * 0.05)
+                
+                Text("You need")
+                    .font(.system(size: 100))
+                    .minimumScaleFactor(0.001)
+                    .frame(maxWidth: geometry.size.width / 2, maxHeight: geometry.size.height * 0.2)
+                    .scaledToFit()
+                
+                Text(
+                    String(
+                        CalculatorViewModel.calculateGramsOfWaterTimes(
+                            waterRatio: Grams(waterRatio) ?? 0,
+                            coffee: Grams(coffee) ?? 0
+                        )
                     )
                 )
-            )
-                .fixedSize()
-                .font(.system(size: 72))
-
-
-            Text("grams of water")
-                .fixedSize()
-                .font(.system(size: 24))
+                .frame(minWidth: geometry.size.width * 0.5, maxWidth: geometry.size.width * 0.7, maxHeight: .infinity, alignment: .center)
+                .font(.system(size: 500))
+                .minimumScaleFactor(0.001)
+                .scaledToFit()
+                .accessibility(identifier: AccessID.waterLabelID.rawValue)
+                
+                Text("grams of water")
+                    .font(.system(size: 100))
+                    .minimumScaleFactor(0.001)
+                    .frame(maxWidth: geometry.size.width / 2, maxHeight: geometry.size.height * 0.15)
+                    .lineLimit(1)
+                    .scaledToFit()
+                
+                Spacer()
+                    .frame(maxHeight: geometry.size.height * 0.05)
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
     }
-
 }

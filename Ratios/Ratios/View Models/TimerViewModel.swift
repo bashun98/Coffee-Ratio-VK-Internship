@@ -10,6 +10,7 @@ import Foundation
 import Combine
 
 class TimerViewModel {
+    
     public var timer = Timer.publish(every: 1, on: .current, in: .common)
     private var cancellableTimer: Cancellable?
 

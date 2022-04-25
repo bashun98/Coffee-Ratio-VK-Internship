@@ -3,10 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20FC74182816DC8900CEF9BD /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 20FC74172816DC8900CEF9BD /* Introspect */; };
+		20FC741A2816DCC200CEF9BD /* AccessID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC74192816DCC200CEF9BD /* AccessID.swift */; };
+		20FC741D2816DD6500CEF9BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC741C2816DD6500CEF9BD /* Extensions.swift */; };
+		20FC74252816DDDB00CEF9BD /* WaterLabelUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC741F2816DDDB00CEF9BD /* WaterLabelUITests.swift */; };
+		20FC74262816DDDB00CEF9BD /* CoffeeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC74202816DDDB00CEF9BD /* CoffeeScreen.swift */; };
+		20FC74272816DDDB00CEF9BD /* TextFieldsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC74212816DDDB00CEF9BD /* TextFieldsUITests.swift */; };
+		20FC74282816DDDB00CEF9BD /* BaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC74222816DDDB00CEF9BD /* BaseTest.swift */; };
+		20FC74292816DDDB00CEF9BD /* ContentViewElementsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC74232816DDDB00CEF9BD /* ContentViewElementsUITests.swift */; };
+		20FC742A2816DDDB00CEF9BD /* TimerViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC74242816DDDB00CEF9BD /* TimerViewUITests.swift */; };
+		20FC742B2816DE1E00CEF9BD /* AccessID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC74192816DCC200CEF9BD /* AccessID.swift */; };
+		20FC742C2816DE2100CEF9BD /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20FC741C2816DD6500CEF9BD /* Extensions.swift */; };
 		526BD84A240771A100A24AD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD849240771A100A24AD2 /* AppDelegate.swift */; };
 		526BD84C240771A100A24AD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD84B240771A100A24AD2 /* SceneDelegate.swift */; };
 		526BD84F240771A100A24AD2 /* Ratios.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 526BD84D240771A100A24AD2 /* Ratios.xcdatamodeld */; };
@@ -15,7 +26,6 @@
 		526BD856240771A300A24AD2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526BD855240771A300A24AD2 /* Preview Assets.xcassets */; };
 		526BD859240771A300A24AD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526BD857240771A300A24AD2 /* LaunchScreen.storyboard */; };
 		526BD864240771A300A24AD2 /* RatiosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD863240771A300A24AD2 /* RatiosTests.swift */; };
-		526BD86F240771A300A24AD2 /* RatiosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD86E240771A300A24AD2 /* RatiosUITests.swift */; };
 		526BD87E24077F4200A24AD2 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD87D24077F4200A24AD2 /* TimerView.swift */; };
 		526BD88224079A5B00A24AD2 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD88124079A5B00A24AD2 /* TimerViewModel.swift */; };
 		526BD8842408CCFE00A24AD2 /* CoffeeInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526BD8832408CCFE00A24AD2 /* CoffeeInput.swift */; };
@@ -44,6 +54,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20FC74192816DCC200CEF9BD /* AccessID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccessID.swift; path = Ratios/AccessID.swift; sourceTree = SOURCE_ROOT; };
+		20FC741C2816DD6500CEF9BD /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		20FC741F2816DDDB00CEF9BD /* WaterLabelUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterLabelUITests.swift; sourceTree = "<group>"; };
+		20FC74202816DDDB00CEF9BD /* CoffeeScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoffeeScreen.swift; sourceTree = "<group>"; };
+		20FC74212816DDDB00CEF9BD /* TextFieldsUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsUITests.swift; sourceTree = "<group>"; };
+		20FC74222816DDDB00CEF9BD /* BaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTest.swift; sourceTree = "<group>"; };
+		20FC74232816DDDB00CEF9BD /* ContentViewElementsUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewElementsUITests.swift; sourceTree = "<group>"; };
+		20FC74242816DDDB00CEF9BD /* TimerViewUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerViewUITests.swift; sourceTree = "<group>"; };
 		526BD846240771A100A24AD2 /* Ratios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		526BD849240771A100A24AD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		526BD84B240771A100A24AD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +75,6 @@
 		526BD863240771A300A24AD2 /* RatiosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatiosTests.swift; sourceTree = "<group>"; };
 		526BD865240771A300A24AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526BD86A240771A300A24AD2 /* RatiosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RatiosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		526BD86E240771A300A24AD2 /* RatiosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatiosUITests.swift; sourceTree = "<group>"; };
 		526BD870240771A300A24AD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526BD87D24077F4200A24AD2 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		526BD88124079A5B00A24AD2 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
@@ -74,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20FC74182816DC8900CEF9BD /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +144,8 @@
 				526BD857240771A300A24AD2 /* LaunchScreen.storyboard */,
 				526BD85A240771A300A24AD2 /* Info.plist */,
 				526BD84D240771A100A24AD2 /* Ratios.xcdatamodeld */,
+				20FC74192816DCC200CEF9BD /* AccessID.swift */,
+				20FC741C2816DD6500CEF9BD /* Extensions.swift */,
 				526BD854240771A300A24AD2 /* Preview Content */,
 			);
 			path = Ratios;
@@ -152,7 +172,12 @@
 		526BD86D240771A300A24AD2 /* RatiosUITests */ = {
 			isa = PBXGroup;
 			children = (
-				526BD86E240771A300A24AD2 /* RatiosUITests.swift */,
+				20FC74222816DDDB00CEF9BD /* BaseTest.swift */,
+				20FC74202816DDDB00CEF9BD /* CoffeeScreen.swift */,
+				20FC74232816DDDB00CEF9BD /* ContentViewElementsUITests.swift */,
+				20FC74212816DDDB00CEF9BD /* TextFieldsUITests.swift */,
+				20FC74242816DDDB00CEF9BD /* TimerViewUITests.swift */,
+				20FC741F2816DDDB00CEF9BD /* WaterLabelUITests.swift */,
 				526BD870240771A300A24AD2 /* Info.plist */,
 			);
 			path = RatiosUITests;
@@ -195,6 +220,9 @@
 			dependencies = (
 			);
 			name = Ratios;
+			packageProductDependencies = (
+				20FC74172816DC8900CEF9BD /* Introspect */,
+			);
 			productName = Ratios;
 			productReference = 526BD846240771A100A24AD2 /* Ratios.app */;
 			productType = "com.apple.product-type.application";
@@ -242,7 +270,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1330;
 				ORGANIZATIONNAME = "John Peden";
 				TargetAttributes = {
 					526BD845240771A100A24AD2 = {
@@ -254,6 +282,7 @@
 					};
 					526BD869240771A300A24AD2 = {
 						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1330;
 						TestTargetID = 526BD845240771A100A24AD2;
 					};
 				};
@@ -267,6 +296,9 @@
 				Base,
 			);
 			mainGroup = 526BD83D240771A100A24AD2;
+			packageReferences = (
+				20FC74162816DC8800CEF9BD /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
+			);
 			productRefGroup = 526BD847240771A100A24AD2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -318,6 +350,8 @@
 				5271249A240B663A00F26EF3 /* WaterDisplay.swift in Sources */,
 				526BD84F240771A100A24AD2 /* Ratios.xcdatamodeld in Sources */,
 				526BD851240771A100A24AD2 /* ContentView.swift in Sources */,
+				20FC741D2816DD6500CEF9BD /* Extensions.swift in Sources */,
+				20FC741A2816DCC200CEF9BD /* AccessID.swift in Sources */,
 				526BD8862408D40200A24AD2 /* RatioInput.swift in Sources */,
 				526BD88224079A5B00A24AD2 /* TimerViewModel.swift in Sources */,
 				526BD84C240771A100A24AD2 /* SceneDelegate.swift in Sources */,
@@ -337,7 +371,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				526BD86F240771A300A24AD2 /* RatiosUITests.swift in Sources */,
+				20FC74292816DDDB00CEF9BD /* ContentViewElementsUITests.swift in Sources */,
+				20FC74282816DDDB00CEF9BD /* BaseTest.swift in Sources */,
+				20FC742B2816DE1E00CEF9BD /* AccessID.swift in Sources */,
+				20FC742C2816DE2100CEF9BD /* Extensions.swift in Sources */,
+				20FC742A2816DDDB00CEF9BD /* TimerViewUITests.swift in Sources */,
+				20FC74252816DDDB00CEF9BD /* WaterLabelUITests.swift in Sources */,
+				20FC74262816DDDB00CEF9BD /* CoffeeScreen.swift in Sources */,
+				20FC74272816DDDB00CEF9BD /* TextFieldsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +435,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -454,6 +496,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -488,14 +531,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Ratios/Preview Content\"";
-				DEVELOPMENT_TEAM = 26V332SYBX;
+				DEVELOPMENT_TEAM = HPFL4V5BSY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Ratios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnmahlonpeden.Ratios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bashuneugene.RatiosUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -508,14 +551,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"Ratios/Preview Content\"";
-				DEVELOPMENT_TEAM = 26V332SYBX;
+				DEVELOPMENT_TEAM = HPFL4V5BSY;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Ratios/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.johnmahlonpeden.Ratios;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bashuneugene.RatiosUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -527,8 +570,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 26V332SYBX;
+				DEVELOPMENT_TEAM = HPFL4V5BSY;
 				INFOPLIST_FILE = RatiosTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -549,8 +593,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 26V332SYBX;
+				DEVELOPMENT_TEAM = HPFL4V5BSY;
 				INFOPLIST_FILE = RatiosTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -570,8 +615,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 26V332SYBX;
+				DEVELOPMENT_TEAM = HPFL4V5BSY;
 				INFOPLIST_FILE = RatiosUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -580,6 +627,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.johnmahlonpeden.RatiosUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Ratios;
@@ -590,8 +638,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 26V332SYBX;
+				DEVELOPMENT_TEAM = HPFL4V5BSY;
 				INFOPLIST_FILE = RatiosUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -646,6 +696,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		20FC74162816DC8800CEF9BD /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		20FC74172816DC8900CEF9BD /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 20FC74162816DC8800CEF9BD /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		526BD84D240771A100A24AD2 /* Ratios.xcdatamodeld */ = {

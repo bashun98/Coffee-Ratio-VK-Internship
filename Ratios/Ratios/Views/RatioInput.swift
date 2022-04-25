@@ -9,14 +9,13 @@
 import SwiftUI
 
 struct RatioInput: View {
+    
     var body: some View {
         VStack {
             Text("What ratio?")
                 .font(.system(size: 24))
                 .fixedSize()
                 .foregroundColor(Color("Text"))
-
-            
         }
     }
 }

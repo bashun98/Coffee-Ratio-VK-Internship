@@ -15,65 +15,74 @@ private enum TimerState {
 }
 
 struct TimerView: View {
-
+    
     @State var buttonText: String = "Start"
     @State var timerText: String = "00:00"
     @State private var timerState: TimerState = .paused
     @State private var secondsPassed = 0
-
+    
     private let viewModel = TimerViewModel()
-
+    
     var body: some View {
-        VStack {
-            Text(timerText)
-                .font(.system(size: 64))
-                .frame(width: CGFloat(300), height: CGFloat(52))
-                .onReceive(viewModel.timer) { date in
-                    self.secondsPassed += 1
-
-                    let hours = String(format: "%02d", self.secondsPassed / 60)
-                    let minutes = String(format :"%02d", self.secondsPassed % 60)
-                    self.timerText = "\(hours):\(minutes)"
+        GeometryReader { geometry in
+            VStack {
+                Text(timerText)
+                    .frame(minWidth: geometry.size.width / 2, maxWidth: geometry.size.width / 1.5, maxHeight: geometry.size.height * 0.4, alignment: .center)
+                    .font(.system(size: 500).monospacedDigit())
+                    .minimumScaleFactor(0.001)
+                    .onReceive(viewModel.timer) { date in
+                        self.secondsPassed += 1
+                        
+                        let hours = String(format: "%02d", self.secondsPassed / 60)
+                        let minutes = String(format :"%02d", self.secondsPassed % 60)
+                        self.timerText = "\(hours):\(minutes)"
+                    }
+                    .scaledToFit()
+                    .accessibility(identifier: AccessID.timerLabelID.rawValue)
+                
+                Button(action: handleButtonPress) {
+                    Text(buttonText)
+                        .padding(5)
+                        .font(.system(size: 500))
+                        .minimumScaleFactor(0.001)
+                        .frame(maxWidth: geometry.size.width / 2, maxHeight: geometry.size.height * 2 / 9)
+                        .background(Color("Primary"))
+                        .cornerRadius(CGFloat(15))
+                        .foregroundColor(Color("AltText"))
                 }
-
-            Spacer()
-                .frame(height: 20)
-
-            Button(action: handleButtonPress) {
-                Text(buttonText)
-                    .font(.system(size: 20))
-                    .fixedSize()
-                    .frame(width: CGFloat(200), height: CGFloat(52))
-                    .background(Color("Primary"))
-                    .cornerRadius(CGFloat(10))
-                    .foregroundColor(Color("AltText"))
+                .scaledToFit()
+                .accessibility(identifier: AccessID.startPauseButtonID.rawValue)
+                
+                Button(action: {
+                    self.timerState = .paused
+                    self.viewModel.stop()
+                    self.buttonText = "Start"
+                    self.secondsPassed = 0
+                    self.timerText = "00:00"
+                }) {
+                    Text("Reset")
+                        .frame(maxWidth: geometry.size.width / 4, maxHeight: geometry.size.height / 9)
+                        .font(.system(size: 500))
+                        .minimumScaleFactor(0.001)
+                        .foregroundColor(Color("Primary"))
+                }
+                .scaledToFit()
+                .accessibility(identifier: AccessID.resetButtonID.rawValue)
+                
+                Spacer()
+                    .frame(maxHeight: geometry.size.height / 9)
             }
-
-            Spacer()
-                .frame(height: 12)
-
-            Button(action: {
-                self.timerState = .paused
-                self.viewModel.stop()
-                self.buttonText = "Start"
-                self.secondsPassed = 0
-                self.timerText = "00:00"
-            }) {
-                Text("Reset")
-                .font(.system(size: 17))
-                .fixedSize()
-                .foregroundColor(Color("Primary"))
-            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
         }
     }
-
+    
     func handleButtonPress() {
         switch timerState {
         case .running:
             viewModel.stop()
             buttonText = "Start"
             timerState = .paused
-
+            
         case .paused:
             viewModel.start()
             buttonText = "Pause"
