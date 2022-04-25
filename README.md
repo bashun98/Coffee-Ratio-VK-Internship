@@ -1,15 +1,7 @@
-# Ratios
-[![Build Status](https://travis-ci.org/johnmahlon/Coffee-Ratio.svg?branch=master)](https://travis-ci.org/johnmahlon/Coffee-Ratio)
+# Coffee-Ratios
 
-This is an open source app made to help home brewers brew their coffee by calculating the grams of water needed,
-and run a timer all in the same screen. 
+VK IOS Internship
 
-This is perfect for:
-- Chemex
-- French Press
-- V60
-- Drip Pot
-- other slow bar methods 
+UI testing the Coffee Ratio app + fixing bugs
 
-![app screenshot](screenshot.png)
-
+Use UITestScript.sh to run UI Tests from command line
